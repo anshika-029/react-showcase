@@ -1,0 +1,62 @@
+/* General Dark Background */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Home Container */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Page Title */
+.home-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00bcd4; /* accent color */
+}
+
+/* Grid for posts */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Card */
+.post-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover Effect */
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.4);
+}
+
+/* Link Style */
+.post-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Post Title */
+.post-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00bcd4;
+}
+
+/* Post Body Preview */
+.post-body {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+}
