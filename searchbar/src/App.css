@@ -1,13 +1,42 @@
+
 .app {
-  max-width: 400px;
+  max-width: 100%;
+  width: 100%;
+  min-width: 0;
   margin: 40px auto;
   font-family: Arial, sans-serif;
   text-align: left;
+  box-sizing: border-box;
+  padding: 16px;
 }
+
+@media (min-width: 480px) {
+  .app {
+    max-width: 400px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    margin: 16px auto;
+    padding: 8px;
+  }
+  input[type="text"] {
+    font-size: 15px;
+    padding: 8px;
+  }
+  li {
+    font-size: 15px;
+    padding: 7px 8px;
+  }
+}
+
 
 /* Input box */
 input[type="text"] {
   width: 100%;
+  min-width: 0;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 8px;
@@ -15,6 +44,7 @@ input[type="text"] {
   outline: none;
   margin-bottom: 15px;
   transition: 0.2s;
+  box-sizing: border-box;
 }
 
 input[type="text"]:focus {
@@ -22,17 +52,23 @@ input[type="text"]:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
+
 /* Results list */
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 
 li {
   padding: 8px 12px;
   border-bottom: 1px solid #eee;
   cursor: pointer;
   transition: background 0.2s;
+  word-break: break-word;
 }
 
 li:hover {

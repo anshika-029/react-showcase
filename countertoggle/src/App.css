@@ -220,3 +220,87 @@
         height: 35px;
     }
 }
+
+/* Tablet screens (portrait and landscape) */
+@media (min-width: 481px) and (max-width: 900px) {
+    .counter {
+        padding: 35px 35px;
+        min-width: 280px;
+    }
+
+    .count {
+        font-size: 2.2rem;
+        margin-bottom: 28px;
+    }
+
+    .counter button:not(.theme-toggle) {
+        padding: 14px 22px;
+        font-size: 1.1rem;
+        margin: 6px 10px;
+        min-width: 65px;
+    }
+
+    .theme-toggle {
+        top: 12px;
+        right: 12px;
+        font-size: 1.3rem;
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* Small laptops and desktops */
+@media (min-width: 901px) and (max-width: 1199px) {
+    .counter {
+        padding: 40px 50px;
+        min-width: 320px;
+    }
+
+    .count {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .counter button:not(.theme-toggle) {
+        padding: 15px 25px;
+        font-size: 1.2rem;
+        margin: 8px 12px;
+        min-width: 70px;
+    }
+
+    .theme-toggle {
+        top: 15px;
+        right: 15px;
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Large screens and 4K displays */
+@media (min-width: 1200px) {
+    .counter {
+        padding: 60px 80px;
+        min-width: 400px;
+    }
+
+    .count {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+
+    .counter button:not(.theme-toggle) {
+        padding: 20px 35px;
+        font-size: 1.4rem;
+        margin: 10px 16px;
+        min-width: 90px;
+    }
+
+    .theme-toggle {
+        top: 20px;
+        right: 20px;
+        font-size: 1.8rem;
+        width: 48px;
+        height: 48px;
+    }
+}

@@ -25,11 +25,10 @@ function App() {
   }, []);
 
 
-  // useEffect(() => {
-  //   if (todo.length > 0) {
-  //     localStorage.setItem("todos", JSON.stringify(todo));
-  //   }
-  // }, [todo]);
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todo));
+  }, [todo]);
+
 
 
   const handleAdd = () => {

@@ -60,3 +60,45 @@ body {
     font-size: 0.95rem;
     color: #b0b0b0;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .home-container {
+        padding: 24px 8px;
+    }
+    .home-title {
+        font-size: 2rem;
+    }
+    .posts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 14px;
+    }
+    .post-card {
+        padding: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        padding: 8px 2px;
+    }
+    .home-title {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+    .posts-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .post-card {
+        padding: 8px;
+        border-radius: 7px;
+    }
+    .post-title {
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+    .post-body {
+        font-size: 0.85rem;
+    }
+}

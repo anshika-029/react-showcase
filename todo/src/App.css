@@ -183,3 +183,73 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .tasks, .wrap {
+        width: 95%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .logo {
+        width: 60%;
+        font-size: 1.5rem;
+        margin: 30px auto 20px auto;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .app {
+        padding: 10px 0;
+    }
+    .wrap {
+        padding: 0 5px;
+    }
+    .logo {
+        width: 95%;
+        font-size: 1.1rem;
+        margin: 15px auto 10px auto;
+        padding: 8px 0;
+    }
+    .add-tasks {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+    #input {
+        width: 100%;
+        min-width: 0;
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    .add, .mode {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+    .tasks {
+        width: 100%;
+        padding: 10px 2px;
+        font-size: 0.95rem;
+    }
+    .list-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 8px 0;
+    }
+    .list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        width: 100%;
+    }
+    .tasks button {
+        width: 100%;
+        margin: 6px 0 0 0;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+}
+
